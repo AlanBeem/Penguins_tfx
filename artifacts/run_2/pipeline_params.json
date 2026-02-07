@@ -1,0 +1,24 @@
+{
+  "pipeline_name": "penguins_keras_densenet",
+  "csv": "https://raw.githubusercontent.com/tensorflow/tfx/master/tfx/examples/penguin/data/labelled/penguins_processed.csv",
+  "feature_set": "penguins_features_labelled_tfx",
+  "model_type": "keras_densenet",
+  "hyperparams": {
+    "seed": 1337,
+    "epochs": 100,
+    "batch_size": 8,
+    "lr": 1e-05,
+    "test_size": 0.2
+  },
+  "features": {
+    "label": "species",
+    "numeric": [
+      "culmen_length_mm",
+      "culmen_depth_mm",
+      "flipper_length_mm",
+      "body_mass_g"
+    ],
+    "categorical": []
+  },
+  "data_fingerprint": "39b4d36739857e432f95ca9bcedc8b80566f659d996b2bcb69a1db41045776d8"
+}
